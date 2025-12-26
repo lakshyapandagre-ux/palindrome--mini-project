@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker | Data Structures Project</title>
+
+    <!-- Google Fonts: Outfit for a premium, modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <h1 class="hero-title">PALINDROME CHECKER</h1>
+            <p class="hero-subtitle">Data Structures Mini Project</p>
+            </header>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+
+            <!-- Main Column: The Checker -->
+            <main class="checker-section">
+
+                <div class="glass-card checker-card">
+                    <div class="checker-header">
+                        <h2>Check Text</h2>
+                        <p>Enter your text below to analyze its structure</p>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="palindromeInput" placeholder="Type a word or sentence..."
+                            autocomplete="off">
+                        <div class="char-counter">0 characters</div>
+                    </div>
+
+                    <p class="note-text">Spaces and special characters are ignored.</p>
+
+                    <div class="action-buttons">
+                        <button id="checkBtn" class="btn btn-primary">
+                            <span>Check Palindrome</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button id="clearBtn" class="btn btn-secondary">Clear</button>
+                    </div>
+
+                    <!-- Result Section (Hidden by default) -->
+                    <div id="resultCard" class="result-card hidden">
+                        <div class="result-icon" id="resultIcon"></div>
+                        <div class="result-content">
+                            <h3 id="resultTitle"></h3>
+                            <p id="resultMessage"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!-- Sidebar Column: Info & Details -->
+            <aside class="info-sidebar">
+
+                <!-- Project Info Card -->
+                <div class="glass-card team-card">
+                    <h3 class="card-header">Submitted By</h3>
+                    <ul class="team-list">
+                        <li class="team-member">
+                            <span class="member-name">Lakshya Pandagre</span>
+                            <span class="member-id">0832CI241075</span>
+                        </li>
+                        <li class="team-member">
+                            <span class="member-name">Minal Patidar</span>
+                            <span class="member-id">0832CI241079</span>
+                        </li>
+                        <li class="team-member">
+                            <span class="member-name">Mahak Verma</span>
+                            <span class="member-id">0832CI241077</span>
+                        </li>
+                        <li class="team-member">
+                            <span class="member-name">Mahak Rajput</span>
+                            <span class="member-id">0832CI241076</span>
+                        </li>
+                        <li class="team-member">
+                            <span class="member-name">Manisha Lowanshi</span>
+                            <span class="member-id">0832CI241078</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subject & Faculty Cards -->
+                <div class="details-grid">
+                    <div class="glass-card detail-card">
+                        <span class="detail-label">Subject</span>
+                        <h4 class="detail-value">Data Structures</h4>
+                    </div>
+                    <div class="glass-card detail-card">
+                        <span class="detail-label">Submitted To</span>
+                        <h4 class="detail-value">Dr. Ankit Chakrawarti</h4>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-pill">
+                Made by <strong>Lakshya Pandagre</strong>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
